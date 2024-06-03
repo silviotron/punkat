@@ -38,6 +38,7 @@ const { title } = Astro.props;
 <style is:global>
   :root {
     --vichy-size: 100px;
+    --vichy-color: rgba(209, 40, 40, 0.5);
   }
   html {
     font-family: Arial, Helvetica, sans-serif;
@@ -49,17 +50,17 @@ const { title } = Astro.props;
     --_g: 35.36% 35.36% at;
     --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
     background-image: linear-gradient(
-        rgba(255, 71, 71, 0.48) 25%,
+        var(--vichy-color) 25%,
         transparent 25%,
         transparent 75%,
-        rgba(255, 71, 71, 0.48) 75%
+        var(--vichy-color) 75%
       ),
       linear-gradient(
         to right,
-        rgba(255, 71, 71, 0.48) 25%,
+        var(--vichy-color) 25%,
         transparent 25%,
         transparent 75%,
-        rgba(255, 71, 71, 0.48) 75%
+        var(--vichy-color) 75%
       );
     background-size: var(--vichy-size) var(--vichy-size);
     background-position: center top;
