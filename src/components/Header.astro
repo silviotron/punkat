@@ -13,13 +13,28 @@ const optimizedBackground = await getImage({
     <!-- style={`background-image: url('${optimizedBackground.src}')`}-->
     <div
       style={`background-image: url('${optimizedBackground.src}');`}
-      class="bg-cover back relative min-h-[80px] flex items-center bg-gray-300"
+      class="bg-cover relative flex items-center justify-center bg-gray-300 p-4"
     >
       <h1
-        class="select-none text-6xl font-bold text-center m-auto p-4 lg:text-7xl text-[10vw] text-gray-100"
+        class="select-none font-bold text-center m-auto text-[16vw] lg:text-9xl"
       >
         70s Beach Vacation
       </h1>
     </div>
   </a>
 </div>
+<style>
+  @font-face {
+    font-family: "BDROCKET";
+    src: url("/fonts/BDROCKET.ttf");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  h1 {
+    font-family: "BDROCKET", sans-serif;
+    color: rgba(255, 71, 71, 1);
+    transform: translateY(-22%);
+    line-height: 60%;
+  }
+</style>
