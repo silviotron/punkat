@@ -5,54 +5,56 @@ import galeria from "../assets/galeria.jpg";
 import catalogo from "../assets/catalogo.jpg";
 ---
 
-<Layout title="TITLE">
-  <div class="w-full h-full pl-4 lg:w-1/2 relative hover:scale-95 duration-100">
-    <a href="catalogo">
-      <div class="relative">
-        <Image
-          src={catalogo}
-          alt="Lookbook"
-          class="bg-cover bg-center relative"
-          widths={[240, 540, 720, 1080]}
-          quality={80}
-          loading="eager"
-          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-b from-transparent from-40% to-[rgba(0,0,0,0.8)]"
-        >
+<Layout title="70s Beach vacation - Punkat">
+  <div class="columns-1 lg:columns-2 gap-0 pl-4 pr-4">
+    <div class="hover:scale-95 duration-100">
+      <a href="catalogo">
+        <div class="relative">
+          <Image
+            src={catalogo}
+            alt="Lookbook"
+            class="bg-cover bg-center relative"
+            widths={[240, 540, 720, 1080]}
+            quality={80}
+            loading="eager"
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent from-40% to-[rgba(0,0,0,0.8)]"
+          >
+          </div>
+          <h1
+            class="leading-none text-[15vw] text-center select-none absolute bottom-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#DDDCDB] lg:text-[7vw] xl:text-[6vw]"
+          >
+            Catálogo
+          </h1>
         </div>
-        <h1
-          class="leading-none text-[15vw] text-center select-none absolute bottom-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#DDDCDB] lg:text-[7vw] xl:text-[6vw]"
-        >
-          Catálogo
-        </h1>
-      </div>
-    </a>
-  </div>
-  <div class="w-full h-full pr-4 lg:w-1/2 relative hover:scale-95 duration-100">
-    <a href="galeria">
-      <div class="relative">
-        <Image
-          src={galeria}
-          widths={[240, 540, 720, 1080]}
-          quality={80}
-          sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
-          alt="Catálogo"
-          loading="eager"
-          class="bg-cover bg-center relative"
-        />
-        <div
-          class="absolute inset-0 bg-gradient-to-t from-transparent from-60% to-[rgba(0,0,0,0.8)]"
-        >
+      </a>
+    </div>
+    <div class="hover:scale-95 duration-100">
+      <a href="galeria">
+        <div class="relative">
+          <Image
+            src={galeria}
+            widths={[240, 540, 720, 1080]}
+            quality={80}
+            sizes={`(max-width: 360px) 240px, (max-width: 720px) 540px, (max-width: 1600px) 720px, 1080px`}
+            alt="Catálogo"
+            loading="eager"
+            class="bg-cover bg-center relative"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-transparent from-40% to-[rgba(0,0,0,0.8)]"
+          >
+          </div>
+          <h1
+            class="leading-none text-[15vw] text-center select-none absolute bottom-[0%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#DDDCDB] lg:text-[7vw] xl:text-[6vw]"
+          >
+            Galería
+          </h1>
         </div>
-        <h1
-          class="leading-none text-[15vw] text-center select-none absolute top-[12%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-[#DDDCDB] lg:text-[7vw] xl:text-[6vw]"
-        >
-          Galería
-        </h1>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
   <span hidden class="lg:w-1/2 lg:w-1/3 lg:w-1/4 lg:w-1/5 lg:w-1/6"></span>
 </Layout>
